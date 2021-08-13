@@ -1,1 +1,1 @@
-python face_detect.py {path_image}
+python faceDetect.py {path_image}
