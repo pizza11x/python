@@ -15,7 +15,12 @@ def main():
     name = pytube.extract.video_id(video_url)
     #Download only_audio from youtube
     pytube.YouTube(video_url).streams.filter(only_audio=True).first().download(filename=name)
-    location = path + name
+    
+    if os.name == 'nt':
+        location = path + name + '.mp4'
+    else:
+        location = path + name
+        
     renametomp3 = path + name + '.mp3'
 
     #Give extension to file
