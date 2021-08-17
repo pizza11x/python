@@ -264,7 +264,7 @@ def withAI():
     resetButton = Button(root1, text='RESET', font='Helvetica 13 bold', height=1, width=15, bg='#4e5153', fg='#ffffff',
                          command=reset)
     resetButton.place(x=360, y=260)
-    Button(root1, text='EXIT', font='Helvetica 12', height=3, width=6, bg='#4e5153', fg='#ffffff',
+    Button(root1, text='EXIT', font='Helvetica 13 bold', height=1, width=15, bg='#4e5153', fg='#ffffff',
            command=root1.destroy).place(x=360, y=310)
     playerX_var.set('Player X : ' + str(playerX))
     playerO_var.set('Player O : ' + str(playerO))
